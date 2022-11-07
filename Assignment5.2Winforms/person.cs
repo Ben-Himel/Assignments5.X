@@ -30,4 +30,20 @@ namespace Assignment5._2Winforms
         }
 
     }
+    
+    //internal class BlackBook
+    //{
+    //    //Dictionary<string, Person> blackBook = new Dictionary<string, Person>();
+
+        
+
+    //    public void CreateBlackBook()
+    //    {
+    //         Dictionary<string, Person> _blackBook = new Dictionary<string, Person>();
+    //    }
+
+
+    //}
+
+
 }

@@ -34,21 +34,32 @@
             this.buttonSearch = new System.Windows.Forms.Button();
             this.buttonAdd = new System.Windows.Forms.Button();
             this.buttondelete = new System.Windows.Forms.Button();
+            this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MobileNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.WorkNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Addresss = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridBlackBookview)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridBlackBookview
             // 
             this.dataGridBlackBookview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridBlackBookview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.FirstName,
+            this.LastName,
+            this.MobileNumber,
+            this.WorkNumber,
+            this.Addresss});
             this.dataGridBlackBookview.Location = new System.Drawing.Point(12, 12);
             this.dataGridBlackBookview.Name = "dataGridBlackBookview";
             this.dataGridBlackBookview.RowTemplate.Height = 25;
-            this.dataGridBlackBookview.Size = new System.Drawing.Size(776, 237);
+            this.dataGridBlackBookview.Size = new System.Drawing.Size(543, 237);
             this.dataGridBlackBookview.TabIndex = 0;
             // 
             // buttonClear
             // 
-            this.buttonClear.Location = new System.Drawing.Point(713, 255);
+            this.buttonClear.Location = new System.Drawing.Point(480, 255);
             this.buttonClear.Name = "buttonClear";
             this.buttonClear.Size = new System.Drawing.Size(75, 23);
             this.buttonClear.TabIndex = 1;
@@ -88,18 +99,43 @@
             // 
             // buttondelete
             // 
-            this.buttondelete.Location = new System.Drawing.Point(632, 255);
+            this.buttondelete.Location = new System.Drawing.Point(399, 255);
             this.buttondelete.Name = "buttondelete";
             this.buttondelete.Size = new System.Drawing.Size(75, 23);
             this.buttondelete.TabIndex = 5;
             this.buttondelete.Text = "Delete";
             this.buttondelete.UseVisualStyleBackColor = true;
             // 
+            // FirstName
+            // 
+            this.FirstName.HeaderText = "First Name";
+            this.FirstName.Name = "FirstName";
+            // 
+            // LastName
+            // 
+            this.LastName.HeaderText = "Last Name";
+            this.LastName.Name = "LastName";
+            // 
+            // MobileNumber
+            // 
+            this.MobileNumber.HeaderText = "Mobile Number";
+            this.MobileNumber.Name = "MobileNumber";
+            // 
+            // WorkNumber
+            // 
+            this.WorkNumber.HeaderText = "Work Number";
+            this.WorkNumber.Name = "WorkNumber";
+            // 
+            // Addresss
+            // 
+            this.Addresss.HeaderText = "Address";
+            this.Addresss.Name = "Addresss";
+            // 
             // FormStart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 295);
+            this.ClientSize = new System.Drawing.Size(576, 295);
             this.Controls.Add(this.buttondelete);
             this.Controls.Add(this.buttonAdd);
             this.Controls.Add(this.buttonSearch);
@@ -121,5 +157,10 @@
         private Button buttonSearch;
         private Button buttonAdd;
         private Button buttondelete;
+        private DataGridViewTextBoxColumn FirstName;
+        private DataGridViewTextBoxColumn LastName;
+        private DataGridViewTextBoxColumn MobileNumber;
+        private DataGridViewTextBoxColumn WorkNumber;
+        private DataGridViewTextBoxColumn Addresss;
     }
 }

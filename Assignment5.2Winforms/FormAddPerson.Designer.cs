@@ -49,6 +49,7 @@
             this.buttonSubmit.TabIndex = 0;
             this.buttonSubmit.Text = "Scrawl in book";
             this.buttonSubmit.UseVisualStyleBackColor = true;
+            this.buttonSubmit.Click += new System.EventHandler(this.buttonSubmit_Click);
             // 
             // textBoxFirstName
             // 

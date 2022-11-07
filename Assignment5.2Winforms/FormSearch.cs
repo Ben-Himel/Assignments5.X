@@ -16,5 +16,18 @@ namespace Assignment5._2Winforms
         {
             InitializeComponent();
         }
+
+        private void buttonSearch_Click(object sender, EventArgs e)
+        {
+            if(FormStart.instance.blackBook[textBoxSerch.Text] != null)
+            {
+                Person searchPerson = FormStart.instance.blackBook[textBoxSerch.Text];
+                MessageBox.Show($"Name: {searchPerson.FirstName} {searchPerson.LastName}" +
+                    $"\n Cell: {searchPerson.MobilePhone} Work: {searchPerson.WorkPhone}" +
+                    $"\n Address: {searchPerson.Address}", $"Search for \"{searchPerson.FirstName}");
+
+            }
+
+        }
     }
 }
