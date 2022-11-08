@@ -14,7 +14,14 @@ namespace Assignment5._2Winforms
             instance = this;
             //BlackBook = _blackBook;
             dataGridBB = dataGridBlackBookview;
+            testData();
 
+        }
+
+        private void testData()
+        {
+            dataGridBB.Rows.Add("Bob", "Shelly", 1234, 4321, "ABC St");
+            dataGridBB.Rows.Add("Nancy", "Pantsy", 555, 5231, "Seseme Rd");
         }
 
         
@@ -48,6 +55,18 @@ namespace Assignment5._2Winforms
         {
             FormAddPerson addPerson = new FormAddPerson();
             addPerson.ShowDialog();
+        }
+
+        private void buttondelete_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show($"Delete Current row?", "Delete Record", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                dataGridBB.Rows.RemoveAt(dataGridBB.CurrentRow.Index);
+            }
+            else
+            {
+
+            }
         }
     }
 }
