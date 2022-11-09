@@ -15,16 +15,19 @@ namespace Assignment5._2Winforms
             //BlackBook = _blackBook;
             dataGridBB = dataGridBlackBookview;
             testData();
-
         }
 
         private void testData()
         {
-            dataGridBB.Rows.Add("Bob", "Shelly", 1234, 4321, "ABC St");
-            dataGridBB.Rows.Add("Nancy", "Pantsy", 555, 5231, "Seseme Rd");
-        }
+            Person nancy = new Person("Nancy", "Pantsy", 555, 5231, "Seseme Rd");
+            blackBook.Add(nancy.FirstName, nancy);
+            dataGridBB.Rows.Add(nancy.FirstName, nancy.LastName, nancy.MobilePhone, nancy.WorkPhone, nancy.Address);
 
-        
+
+
+            //dataGridBB.Rows.Add("Bob", "Shelly", 1234, 4321, "ABC St");
+            //dataGridBB.Rows.Add("Nancy", "Pantsy", 555, 5231, "Seseme Rd");
+        }        
 
         private void buttonClear_Click(object sender, EventArgs e)
         {
